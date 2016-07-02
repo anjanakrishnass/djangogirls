@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <style type="text/css">
+h1 {color:red;}
+</head>
+    </style>
+<body>
+	<h1>new project</h1>
+	{% for p in posts %}
+    <h1>{{ p.title }}</h1>
+    <p>{{ p.text }}</p>
+    <p>{{ p.created_date }}</p>
+    {% endfor %}
+
+</body>
+</html>
